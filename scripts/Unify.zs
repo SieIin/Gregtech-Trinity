@@ -762,7 +762,7 @@ for oreDictEntry, items in oresUnify {
 	oreDictEntry.removeItems(items);
 }
 
-var dustsUnify as IItemStack[][IOreDictEntry] = {
+var dustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustAlmandine
 	<ore:dustAlmandine> : [
@@ -1200,7 +1200,7 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 
 };
 
-for oreDictEntry, items in dustsUnify {
+for oreDictEntry, items in dustUnify {
 	for i in items {
 		mods.jei.JEI.removeAndHide(i);
 	}
@@ -1223,3 +1223,362 @@ for oreDictEntry, items in plateUnify {
 	}
 	oreDictEntry.removeItems(items);
 }*/
+
+var smalldustUnify as IItemStack[][IOreDictEntry] = {
+
+	#dustSmallAlmandine
+	<ore:dustSmallAlmandine> : [
+		<techreborn:smalldust>
+	],
+
+	#dustSmallAluminium
+	<ore:dustAluminium> : [
+	],
+
+	#dustSmallAluminum
+	<ore:dustAluminum>: [
+	],
+
+	#dustSmallAndesite
+	<ore:dustSmallAndesite> : [
+		<techreborn:smalldust:61>
+	],
+
+	#dustSmallAndradite
+	<ore:dustSmallAndradite>: [
+		<techreborn:smalldust:2>
+	],
+	
+	#dustSmallBasalt
+	<ore:dustSmallBasalt>: [
+		<techreborn:smalldust:4>,
+	],
+
+	#dustSmallBauxite
+	<ore:dustSmallBauxite> : [
+		<techreborn:smalldust:5>
+	],
+	
+	#dustSmallBrass
+	<ore:dustSmallBrass> : [
+		<techreborn:smalldust:6>
+	],
+	
+	#dustSmallBronze
+	<ore:dustSmallBronze> : [
+		<techreborn:smalldust:7>,
+	],
+
+	#dustSmallCalcite
+	<ore:dustSmallCalcite> : [
+		<techreborn:smalldust:8>
+	],
+
+	#dustSmallCertusQuartz
+	<ore:dustCertusQuartz> : [
+	],
+
+	#dustSmallCharcoal
+	<ore:dustSmallCharcoal> : [
+		<techreborn:smalldust:9>,
+	],
+
+	#dustSmallChrome
+	<ore:dustSmallChrome> : [
+		<techreborn:smalldust:10>
+	],
+
+	#dustSmallCinnarbar
+	<ore:dustSmallCinnarbar> : [
+		<techreborn:smalldust:11>
+	],
+
+	#dustSmallClay
+	<ore:dustSmallClay> : [
+		<techreborn:smalldust:12>
+	],
+
+	#dustSmallCoal
+	<ore:dustSmallCoal> : [
+		<techreborn:smalldust:13>,
+	],
+
+	#dustSmallCobalt
+	<ore:dustSmallCobalt> : [
+		<industrialupgrade:itemdust:6>
+	],
+
+	#dustSmallConstantan
+	<ore:dustSmallConstantan> : [
+	],
+
+	#dustSmallCopper
+	<ore:dustSmallCopper>: [
+		<techreborn:smalldust:14>,
+	],
+
+	#dustSmallDiamond
+	<ore:dustSmallDiamond> : [
+		<techreborn:smalldust:16>
+	],
+
+	#dustSmallDiroite
+	<ore:dustSmallDiroite> : [
+		<techreborn:smalldust:62>
+	],
+
+	#dustSmallElectrum
+	<ore:dustSmallElectrum> : [
+		<techreborn:smalldust:17>,
+	],
+
+	#dustSmallEnderEye
+	<ore:dustSmallEnderEye> : [
+		<techreborn:smalldust:19>
+	],
+
+	#dustSmallEnderPearl
+	<ore:dustSmallEnderPearl> : [
+		<techreborn:smalldust:20>
+	],
+
+	#dustSmallEndstone
+	<ore:dustSmallEndstone> : [
+		<techreborn:smalldust:21>
+	],
+
+	#dustSmallEmerald
+	<ore:dustSmallEmerald> : [
+		<techreborn:smalldust:18>
+	],
+
+	#dustSmallEnderium
+	<ore:dustSmallEnderium> : [
+	],
+
+	#dustSmallFlint
+	<ore:dustSmallFlint> : [
+		<techreborn:smalldust:22>
+	],
+
+	#dustSmallGalena
+	<ore:dustSmallGalena> : [
+		<techreborn:smalldust:23>
+	],
+
+	#dustSmallGermanium
+	<ore:dustGermanium> : [
+	],
+
+	#dustSmallGold
+	<ore:dustSmallGold> : [
+		<techreborn:smalldust:24>,
+	],
+
+	#dustSmallGranite
+	<ore:dustSmallGranite> : [
+		<techreborn:smalldust:63>
+	],
+
+	#dustSmallGrossular
+	<ore:dustSmallGrossular> : [
+		<techreborn:smalldust:25>
+	],
+
+	#dustSmallInvar
+	<ore:dustSmallInvar> : [
+		<techreborn:smalldust:26>,
+	],
+	
+	#dustSmallIridium
+	<ore:dustSmallIridium> : [
+		<industrialupgrade:itemdust:17>,
+		<techreborn:smalldust:64>,
+	],
+
+	#dustSmallIron
+	<ore:dustSmallIron>: [
+		<techreborn:smalldust:27>
+	],
+
+	#dustSmallLapis
+	<ore:dustSmallLapis> : [
+	],
+
+	#dustSmallLazurite
+	<ore:dustSmallLazurite> : [
+		<techreborn:smalldust:28>
+	],
+
+	#dustSmallLead
+	<ore:dustSmallLead>: [
+		<techreborn:smalldust:29>,
+	],
+
+	#dustSmallLitium
+	<ore:dustSmallLitium> : [
+		<ic2:dust:11>
+	],
+
+	#dustSmallLumium
+	<ore:dustSmallLumium> : [
+	],
+
+	#dustSmallMagnesium
+	<ore:dustSmallMagnesium> : [
+		<techreborn:smalldust:30>
+	],
+
+	#dustSmallManganese
+	<ore:dustSmallManganese> : [
+		<techreborn:smalldust:31>
+	],
+
+	#dustSmallMarble
+	<ore:dustSmallMarble> : [
+		<techreborn:smalldust:32>
+	],
+
+	#dustSmallNetherQuartz
+	<ore:dustSmallNetherQuartz> : [
+	],
+
+	#dustSmallNetherrack
+	<ore:dustSmallNetherrack> : [
+		<techreborn:smalldust:33>
+	],
+
+	#dustSmallNickel
+	<ore:dustSmallNickel> : [
+		<techreborn:smalldust:34>,
+	],
+
+	#dustSmallObsidian
+	<ore:dustSmallObsidian> : [
+		<techreborn:smalldust:35>,
+	],
+
+	#dustSmallPlatinum
+	<ore:dustSmallPlatinum> : [
+		<techreborn:smalldust:38>,
+	],
+
+	#dustSmallPlutonium
+	<ore:dustSmallPlutonium> : [
+		<techreborn:smalldust:66>
+	],
+
+	#dustSmallPyrite
+	<ore:dustSmallPyrite> : [
+		<techreborn:smalldust:38>
+	],
+
+	#dustSmallPyrope
+	<ore:dustSmallPyrope> : [
+		<techreborn:smalldust:40>
+	],
+
+	#dustSmallQuartz
+	<ore:dustSmallQuartz> : [
+	],
+
+	#dustSmallRuby
+	<ore:dustSmallRuby> : [
+		<techreborn:smalldust:43>
+	],
+
+	#dustSmallSaltpeter
+	<ore:dustSmallSaltpeter> : [
+		<techreborn:smalldust:44>,
+	],
+
+	#dustSmallSignalum
+	<ore:dustSmallSignalum>: [
+	],
+
+	#dustSmallSapphire
+	<ore:dustSmallSapphire> : [
+		<techreborn:smalldust:45>
+	],
+
+	#dustSmallSilver
+	<ore:dustSmallSilver>: [
+		<techreborn:smalldust:47>,
+	],
+
+	#dustSmallSilicon
+	<ore:dustSmallSilicon>: [
+	],
+	
+	#dustSmallSodalite
+	<ore:dustSmallSodalite> : [
+		<techreborn:smalldust:48>
+	],
+
+	#dustSmallSpessartine
+	<ore:dustSmallSpessartine> : [
+		<techreborn:smalldust:49>
+	],
+
+	#dustSmallSphalerite
+	<ore:dustSmallSphalerite> : [
+		<techreborn:smalldust:50>
+	],
+
+	#dustSmallSteel
+	<ore:dustSmallSteel> : [
+		<techreborn:smalldust:51>,
+	],
+
+	#dustSmallStone
+	<ore:dustSmallStone> : [
+	],
+
+	#dustSmallSulfur
+	<ore:dustSmallSulfur>: [
+		<techreborn:smalldust:52>,
+	],
+
+	#dustSmallThroium
+	<ore:dustSmallThroium> : [
+		<techreborn:smalldust:65>
+	],
+
+	#dustSmallTin
+	<ore:dustSmallTin>: [
+		<techreborn:smalldust:53>,
+	],
+
+	#dustSmallTitanium
+	<ore:dustSmallTitanium> : [
+		<techreborn:smalldust:54>,
+	],
+
+	#dustSmallTungsten
+	<ore:dustSmallTungsten> : [
+		<techreborn:smalldust:55>
+	],
+
+	#dustSmallUranium 
+	<ore:dustSmallUranium> : [
+		<techreborn:smalldust:66>
+	],
+
+	#dustSmallUvarovite
+	<ore:dustSmallUvarovite> : [
+		<techreborn:smalldust:56>
+	],
+
+	#dustSmallZinc
+	<ore:dustSmallZinc> : [
+		<techreborn:smalldust:59>
+	],
+
+};
+
+for oreDictEntry, items in smalldustUnify {
+	for i in items {
+		mods.jei.JEI.removeAndHide(i);
+	}
+	oreDictEntry.removeItems(items);
+}
