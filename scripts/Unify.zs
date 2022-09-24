@@ -764,6 +764,11 @@ for oreDictEntry, items in oresUnify {
 
 var dustsUnify as IItemStack[][IOreDictEntry] = {
 
+	#dustAlmandine
+	<ore:dustAlmandine> : [
+		<techreborn:dust>
+	],
+
 	#dustAluminium
 	<ore:dustAluminium> : [
 		<thermalfoundation:material:68>
@@ -774,24 +779,69 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:material:68>
 	],
 
+	#dustAndradite
+	<ore:dustAndradite>: [
+		<techreborn:dust:2>
+	],
+	
+	#dustBasalt
+	<ore:dustBasalt>: [
+		<techreborn:dust:4>,
+		<taiga:basalt_dust>
+	],
+
+	#dustBauxite
+	<ore:dustBauxite> : [
+		<techreborn:dust:5>
+	],
+	
+	#dustBrass
+	<ore:dustBrass> : [
+		<techreborn:dust:5>
+	],
+	
 	#dustBronze
 	<ore:dustBronze> : [
+		<techreborn:dust:7>,
 		<thermalfoundation:material:99>
+	],
+
+	#dustCalcite
+	<ore:dustCalcite> : [
+		<techreborn:dust:8>
 	],
 
 	#dustCertusQuartz
 	<ore:dustCertusQuartz> : [
 		<appliedenergistics2:material:2>
 	],
+
 	#dustCharcoal
 	<ore:dustCharcoal> : [
+		<techreborn:dust:9>,
 		<thermalfoundation:material:769>
+	],
+
+	#dustChrome
+	<ore:dustChrome> : [
+		<techreborn:dust:10>
+	],
+
+	#dustCinnarbar
+	<ore:dustCinnarbar> : [
+		<techreborn:dust:11>
+	],
+
+	#dustClay
+	<ore:dustClay> : [
+		<techreborn:dust:12>
 	],
 
 	#dustCoal
 	<ore:dustCoal> : [
-		<enderio:item_material:23>,
 		<actuallyadditions:item_dust:6>,
+		<enderio:item_material:23>,
+		<techreborn:dust:13>,
 		<thermalfoundation:material:768>
 	],
 
@@ -809,34 +859,58 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 	<ore:dustCopper>: [
 		<enderio:item_material:26>,
 		<mekanism:dust:3>,
+		<techreborn:dust:14>,
 		<thermalfoundation:material:64>
 	],
 
 	#dustDiamond
 	<ore:dustDiamond> : [
+		<actuallyadditions:item_dust:2>,
 		<mekanism:otherdust>,
-		<actuallyadditions:item_dust:2>
+		<techreborn:dust:16>
 	],
 
 	#dustElectrum
 	<ore:dustElectrum> : [
+		<techreborn:dust:17>,
 		<thermalfoundation:material:97>
+	],
+
+	#dustEnderEye
+	<ore:dustEnderEye> : [
+		<techreborn:dust:19>
 	],
 
 	#dustEnderPearl
 	<ore:dustEnderPearl> : [
 		<appliedenergistics2:material:46>,
-		<appliedenergistics2:material:46>
+		<techreborn:dust:20>
+	],
+
+	#dustEndstone
+	<ore:dustEndstone> : [
+		<techreborn:dust:21>
 	],
 
 	#dustEmerald
 	<ore:dustEmerald> : [
-		<actuallyadditions:item_dust:3>
+		<actuallyadditions:item_dust:3>,
+		<techreborn:dust:18>
 	],
 
 	#dustEnderium
 	<ore:dustEnderium> : [
 		<thermalfoundation:material:103>
+	],
+
+	#dustFlint
+	<ore:dustFlint> : [
+		<techreborn:dust:22>
+	],
+
+	#dustGalena
+	<ore:dustGalena> : [
+		<techreborn:dust:23>
 	],
 
 	#dustGold
@@ -845,16 +919,34 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 		<appliedenergistics2:material:51>,
 		<enderio:item_material:25>,
 		<mekanism:dust:1>,
+		<techreborn:dust:24>,
 		<thermalfoundation:material:1>
+	],
+
+	#dustGrossular
+	<ore:dustGrossular> : [
+		<techreborn:dust:25>
+	],
+
+	#dustInvar
+	<ore:dustInvar> : [
+		<techreborn:dust:26>,
+		<thermalfoundation:material:98>
+	],
+	
+	#dustIridium
+	<ore:dustIridium> : [
+		<thermalfoundation:material:71>
 	],
 
 	#dustIron
 	<ore:dustIron>: [
-		<mekanism:dust>,
-		<enderio:item_material:24>,
 		<actuallyadditions:item_dust>,
 		<appliedenergistics2:material:49>,
-		<thermalfoundation:material>
+		<enderio:item_material:24>,
+		<mekanism:dust>,
+		<thermalfoundation:material>,
+		<techreborn:dust:27>
 	],
 
 	#dustLapis
@@ -863,25 +955,36 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 		<enderio:item_material:32>
 	],
 
+	#dustLazurite
+	<ore:dustLazurite> : [
+		<techreborn:dust:28>
+	],
+
 	#dustLead
 	<ore:dustLead>: [
 		<mekanism:dust:6>,
+		<techreborn:dust:29>,
 		<thermalfoundation:material:67>
 	],
 
 	#dustLumium
 	<ore:dustLumium> : [
-		<thermalfoundation:material:102>
+		#<thermalfoundation:material:102>
 	],
 
-	#dustInvar
-	<ore:dustInvar> : [
-		<thermalfoundation:material:98>
+	#dustMagnesium
+	<ore:dustMagnesium> : [
+		<techreborn:dust:30>
 	],
 
-	#dustIridium
-	<ore:dustIridium> : [
-		<thermalfoundation:material:71>
+	#dustManganese
+	<ore:dustManganese> : [
+		<techreborn:dust:31>
+	],
+
+	#dustMarble
+	<ore:dustMarble> : [
+		<techreborn:dust:32>
 	],
 
 	#dustNetherQuartz
@@ -893,6 +996,7 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustNickel
 	<ore:dustNickel> : [
+		<techreborn:dust:34>,
 		<thermalfoundation:material:69>
 	],
 
@@ -900,12 +1004,24 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 	<ore:dustObsidian> : [
 		<enderio:item_material:29>,
 		<mekanism:otherdust:6>,
+		<techreborn:dust:35>,
 		<thermalfoundation:material:770>
 	],
 
 	#dustPlatinum
 	<ore:dustPlatinum> : [
+		<techreborn:dust:38>,
 		<thermalfoundation:material:70>
+	],
+
+	#dustPyrite
+	<ore:dustPyrite> : [
+		<techreborn:dust:38>
+	],
+
+	#dustPyrope
+	<ore:dustPyrope> : [
+		<techreborn:dust:40>
 	],
 
 	#dustQuartz
@@ -914,8 +1030,14 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 		<actuallyadditions:item_dust:5>
 	],
 
+	#dustRuby
+	<ore:dustRuby> : [
+		<techreborn:dust:43>
+	],
+
 	#dustSaltpeter
 	<ore:dustSaltpeter> : [
+		<techreborn:dust:44>,
 		<thermalfoundation:material:772>
 	],
 
@@ -924,16 +1046,32 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 		<thermalfoundation:material:101>
 	],
 
+	#dustSapphire
+	<ore:dustSapphire> : [
+		<techreborn:dust:45>
+	],
+
 	#dustSilver
 	<ore:dustSilver>: [
 		<mekanism:dust:5>,
+		<techreborn:dust:47>,
 		<thermalfoundation:material:66>
 	],
 
 	#dustSilicon
 	<ore:dustSilicon>: [
 	],
+	
+	#dustSodalite
+	<ore:dustSodalite> : [
+		<techreborn:dust:48>
+	],
 
+	#dustSpessartine
+	<ore:dustSpessartine> : [
+		<techreborn:dust:49>
+	],
+	
 	#dustSteel
 	<ore:dustSteel> : [
 		<thermalfoundation:material:96>,
@@ -942,8 +1080,12 @@ var dustsUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSulur
 	<ore:dustSulfur>: [
+		<ic2:dust:16>,
+		<immersiveengineering:material:25>,
 		<thermalfoundation:material:771>,
 		<mekanism:otherdust:3>,
+		<natura:materials:4>,
+		<nuclearcraft:gem_dust:6>
 	],
 
 	#dustTin

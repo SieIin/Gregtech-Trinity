@@ -152,7 +152,7 @@ val Ethyleneglycol = MaterialBuilder(515, "ethyleneglycol")
     .build();
 
 val Wood = MaterialRegistry.get("wood");
-    Wood.addFlags("generate_bolt_screw", "generate_small_gear");
+    Wood.addFlags("generate_bolt_screw", "generate_small_gear", "generate_ring");
 
 val Steel = MaterialRegistry.get("steel");
     Steel.addFlags("generate_bolt_screw", "generate_small_gear");
