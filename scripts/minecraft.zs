@@ -55,8 +55,6 @@ recipes.addShaped(<minecraft:red_sandstone> * 2, [
     #Sticks
 recipes.removeByRecipeName("enderio:tweak_stick_from_wood");
 recipes.removeByRecipeName("extrautils2:shortcut_stick");
-recipes.removeByRecipeName("notreepunching:misc/saw_log_sticks");
-recipes.removeByRecipeName("notreepunching:misc/saw_plank_sticks");
 recipes.remove(<natura:sticks:*>);
 recipes.remove(<extraplanets:tier11_items:*>);
 mods.jei.JEI.removeAndHide(<natura:sticks:*>);
@@ -92,6 +90,14 @@ recipes.addShaped(<minecraft:crafting_table>, [
     [<ore:plankWood>, <ore:plankWood>],
     [<minecraft:flint>, <minecraft:flint>]
 ]);
+
+    #Wooden Pressure Plate
+recipes.removeByRecipeName("extraplanets:wooden_pressure_plate");
+recipes.removeByRecipeName("extraplanets:wooden_pressure_plate_alt");
+recipes.removeByRecipeName("extraplanets:wooden_pressure_plate_alt_alt");
+recipes.removeByRecipeName("extraplanets:wooden_pressure_plate_alt_alt_alt");
+recipes.removeByRecipeName("extraplanets:wooden_pressure_plate_alt_alt_alt_alt");
+recipes.removeByRecipeName("extraplanets:wooden_pressure_plate_alt_alt_alt_alt_alt");
 
     #Brick Block
 recipes.remove(<minecraft:brick_block>);
@@ -398,11 +404,11 @@ for glass, glasspane  in GlassPaneRecipes {
 }
 
     #Piston
-recipes.remove(<minecraft:piston>);
+/*recipes.remove(<minecraft:piston>);
 
 recipes.addShaped(<minecraft:piston>, [
     [<actuallyadditions:block_misc:4>, <actuallyadditions:block_misc:4>, <actuallyadditions:block_misc:4>],
-    [<ore:gearsmallIron>, <ore:fenceWood>, <ore:gearsmallIron>],
+    [<ore:gearSmallIron>, <ore:fenceWood>, <ore:gearSmallIron>],
     [<ore:cobblestone>, <ore:plateRedAlloy>, <ore:cobblestone>]
 ]);
 
@@ -412,23 +418,23 @@ recipes.addShaped(<minecraft:piston> * 2, [
     [<ore:cobblestone>, <ore:plateRedAlloy>, <ore:cobblestone>]
 ]);
 
-recipes.addShaped(<minecraft:piston> * 3, [
+recipes.addShaped(<minecraft:piston> * 4, [
     [<actuallyadditions:block_misc:4>, <actuallyadditions:block_misc:4>, <actuallyadditions:block_misc:4>],
     [<ore:gearSmallAluminium>, <ore:fenceWood>, <ore:gearSmallAluminium>],
     [<ore:cobblestone>, <ore:plateRedAlloy>, <ore:cobblestone>]
 ]);
 
-recipes.addShaped(<minecraft:piston> * 5, [
+recipes.addShaped(<minecraft:piston> * 8, [
     [<actuallyadditions:block_misc:4>, <actuallyadditions:block_misc:4>, <actuallyadditions:block_misc:4>],
-    [<ore:gearSmallTitanium>, <ore:fenceWood>, <ore:gearSmallTitanium>],
+    [<ore:gearSmallStainlessSteel>, <ore:fenceWood>, <ore:gearSmallStainlessSteel>],
     [<ore:cobblestone>, <ore:plateRedAlloy>, <ore:cobblestone>]
 ]);
 
-recipes.addShaped(<minecraft:piston> * 7, [
+recipes.addShaped(<minecraft:piston> * 16, [
     [<actuallyadditions:block_misc:4>, <actuallyadditions:block_misc:4>, <actuallyadditions:block_misc:4>],
-    [<ore:gearSmallTungstenSteel>, <ore:fenceWood>, <ore:gearSmallTungstenSteel>],
+    [<ore:gearSmallTitanium>, <ore:fenceWood>, <ore:gearSmallTitanium>],
     [<ore:cobblestone>, <ore:plateRedAlloy>, <ore:cobblestone>]
-]);
+]);*/
 
     #Paper
 recipes.removeByRecipeName("thermalfoundation:paper");
@@ -452,7 +458,6 @@ recipes.addShapeless(<minecraft:wooden_button> * 2, [<ore:craftingToolSaw>, <min
     //GO TO HELL YOU STUPID SLABS
 var SlabRemove as IItemStack[] = [
     <minecraft:stone_slab:*>,
-    <minecraft:stone_slab2>,
     <minecraft:wooden_slab:*>,
     <actuallyadditions:block_testifi_bucks_green_slab>,
     <actuallyadditions:block_testifi_bucks_white_slab>,
@@ -858,5 +863,51 @@ recipes.addShaped(<minecraft:comparator>, [
     [<minecraft:redstone_torch>, <ore:plateQuartzite>, <minecraft:redstone_torch>],
     [<projectred-core:resource_item>, <ore:craftingToolScrewdriver>, <projectred-core:resource_item>]
 ]);
+
+    #Bed
+recipes.remove(<ore:bed>);
+
+var BedColor as IItemStack[IIngredient] = {
+    <minecraft:carpet> : <minecraft:bed>,
+    <minecraft:carpet:1> : <minecraft:bed:1>,
+    <minecraft:carpet:2> : <minecraft:bed:2>,
+    <minecraft:carpet:3> : <minecraft:bed:3>,
+    <minecraft:carpet:4> : <minecraft:bed:4>,
+    <minecraft:carpet:5> : <minecraft:bed:5>,
+    <minecraft:carpet:6> : <minecraft:bed:6>,
+    <minecraft:carpet:7> : <minecraft:bed:7>,
+    <minecraft:carpet:8> : <minecraft:bed:8>,
+    <minecraft:carpet:9> : <minecraft:bed:9>,
+    <minecraft:carpet:10> : <minecraft:bed:10>,
+    <minecraft:carpet:11> : <minecraft:bed:11>,
+    <minecraft:carpet:12> : <minecraft:bed:12>,
+    <minecraft:carpet:13> : <minecraft:bed:13>,
+    <minecraft:carpet:14> : <minecraft:bed:14>,
+    <minecraft:carpet:15> : <minecraft:bed:15>,
+};
+
+    for wool, bed  in BedColor {
+        recipes.addShaped(bed, [
+        [wool, wool, wool],
+        [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+        [<ore:fenceWood>, <ore:craftingToolSoftHammer>, <ore:fenceWood>]
+        ]);
+    }
+
+    #Shield
+recipes.removeByRecipeName("aether_legacy:shield_from_skyroot");
+
+    #Rail
+recipes.removeByRecipeName("mekanism:rail");
+
+    #Trapdoor
+recipes.removeByRecipeName("aether_legacy:skyroot_trapdoor");
+recipes.removeByRecipeName("betternether:stalagnate_planks_trapdoor");
+recipes.removeByRecipeName("extraplanets:trapdoor");
+recipes.removeByRecipeName("extraplanets:trapdoor_alt");
+recipes.removeByRecipeName("extraplanets:trapdoor_alt_alt");
+recipes.removeByRecipeName("extraplanets:trapdoor_alt_alt_alt");
+recipes.removeByRecipeName("extraplanets:trapdoor_alt_alt_alt_alt");
+recipes.removeByRecipeName("extraplanets:trapdoor_alt_alt_alt_alt_alt");
 
 print("Minecraft.zs End"); 

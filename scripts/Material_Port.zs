@@ -75,6 +75,16 @@ val Technetium = MaterialBuilder(513, "technetium")
 val Chrome = MaterialRegistry.get("chrome");
     Chrome.addFlags("generate_long_rod");
 
+val Dc = Elements.add(151, 151, -1, null, "Draconium", "Dc", false);
+
+val Draconium = MaterialBuilder(517, "draconium")
+    .ingot()
+    .color(0x7840AC)
+    .element("Draconium")
+    .iconSet("metallic")
+    .flags(["generate_plate"])
+    .build();
+
 val Gadolinium = MaterialBuilder(514, "gadolinium")
     .ingot()
     .color(0x4A4A4B)

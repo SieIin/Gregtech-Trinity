@@ -1280,7 +1280,7 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallCharcoal
 	<ore:dustSmallCharcoal> : [
-		<techreborn:smalldust:9>,
+		<techreborn:smalldust:9>
 	],
 
 	#dustSmallChrome
@@ -1300,12 +1300,12 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallCoal
 	<ore:dustSmallCoal> : [
-		<techreborn:smalldust:13>,
+		<techreborn:smalldust:13>
 	],
 
 	#dustSmallCobalt
 	<ore:dustSmallCobalt> : [
-		<industrialupgrade:itemdust:6>
+		<industrialupgrade:smalldust:6>
 	],
 
 	#dustSmallConstantan
@@ -1314,7 +1314,7 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallCopper
 	<ore:dustSmallCopper>: [
-		<techreborn:smalldust:14>,
+		<techreborn:smalldust:14>
 	],
 
 	#dustSmallDiamond
@@ -1329,7 +1329,8 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallElectrum
 	<ore:dustSmallElectrum> : [
-		<techreborn:smalldust:17>,
+		<industrialupgrade:smalldust:13>,
+		<techreborn:smalldust:17>
 	],
 
 	#dustSmallEnderEye
@@ -1352,10 +1353,6 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 		<techreborn:smalldust:18>
 	],
 
-	#dustSmallEnderium
-	<ore:dustSmallEnderium> : [
-	],
-
 	#dustSmallFlint
 	<ore:dustSmallFlint> : [
 		<techreborn:smalldust:22>
@@ -1367,7 +1364,8 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 	],
 
 	#dustSmallGermanium
-	<ore:dustGermanium> : [
+	<ore:dustSmallGermanium> : [
+		<industrialupgrade:smalldust:18>
 	],
 
 	#dustSmallGold
@@ -1387,22 +1385,19 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallInvar
 	<ore:dustSmallInvar> : [
-		<techreborn:smalldust:26>,
+		<industrialupgrade:smalldust:4>,
+		<techreborn:smalldust:26>
 	],
 	
 	#dustSmallIridium
 	<ore:dustSmallIridium> : [
 		<industrialupgrade:itemdust:17>,
-		<techreborn:smalldust:64>,
+		<techreborn:smalldust:64>
 	],
 
 	#dustSmallIron
 	<ore:dustSmallIron>: [
 		<techreborn:smalldust:27>
-	],
-
-	#dustSmallLapis
-	<ore:dustSmallLapis> : [
 	],
 
 	#dustSmallLazurite
@@ -1420,17 +1415,15 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 		<ic2:dust:11>
 	],
 
-	#dustSmallLumium
-	<ore:dustSmallLumium> : [
-	],
-
 	#dustSmallMagnesium
 	<ore:dustSmallMagnesium> : [
+		<industrialupgrade:smalldust:7>,
 		<techreborn:smalldust:30>
 	],
 
 	#dustSmallManganese
 	<ore:dustSmallManganese> : [
+		<industrialupgrade:smalldust:16>,
 		<techreborn:smalldust:31>
 	],
 
@@ -1450,27 +1443,29 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallNickel
 	<ore:dustSmallNickel> : [
-		<techreborn:smalldust:34>,
+		<industrialupgrade:smalldust:8>,
+		<techreborn:smalldust:34>
 	],
 
 	#dustSmallObsidian
 	<ore:dustSmallObsidian> : [
-		<techreborn:smalldust:35>,
+		<techreborn:smalldust:35>
 	],
 
 	#dustSmallPlatinum
 	<ore:dustSmallPlatinum> : [
-		<techreborn:smalldust:38>,
+		<industrialupgrade:smalldust:9>,
+		<techreborn:smalldust:38>
 	],
 
 	#dustSmallPlutonium
 	<ore:dustSmallPlutonium> : [
-		<techreborn:smalldust:66>
+		<techreborn:smalldust:69>
 	],
 
 	#dustSmallPyrite
 	<ore:dustSmallPyrite> : [
-		<techreborn:smalldust:38>
+		<techreborn:smalldust:39>
 	],
 
 	#dustSmallPyrope
@@ -1489,7 +1484,7 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallSaltpeter
 	<ore:dustSmallSaltpeter> : [
-		<techreborn:smalldust:44>,
+		<techreborn:smalldust:44>
 	],
 
 	#dustSmallSignalum
@@ -1503,7 +1498,8 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallSilver
 	<ore:dustSmallSilver>: [
-		<techreborn:smalldust:47>,
+		<industrialupgrade:smalldust:14>,
+		<techreborn:smalldust:47>
 	],
 
 	#dustSmallSilicon
@@ -1527,7 +1523,7 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallSteel
 	<ore:dustSmallSteel> : [
-		<techreborn:smalldust:51>,
+		<techreborn:smalldust:51>
 	],
 
 	#dustSmallStone
@@ -1536,32 +1532,34 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallSulfur
 	<ore:dustSmallSulfur>: [
-		<techreborn:smalldust:52>,
+		<techreborn:smalldust:52>
 	],
 
 	#dustSmallThroium
 	<ore:dustSmallThroium> : [
-		<techreborn:smalldust:65>
+		<techreborn:smalldust:67>
 	],
 
 	#dustSmallTin
 	<ore:dustSmallTin>: [
-		<techreborn:smalldust:53>,
+		<techreborn:smalldust:53>
 	],
 
 	#dustSmallTitanium
 	<ore:dustSmallTitanium> : [
-		<techreborn:smalldust:54>,
+		<industrialupgrade:smalldust:10>,
+		<techreborn:smalldust:54>
 	],
 
 	#dustSmallTungsten
 	<ore:dustSmallTungsten> : [
+		<industrialupgrade:smalldust:3>,
 		<techreborn:smalldust:55>
 	],
 
 	#dustSmallUranium 
 	<ore:dustSmallUranium> : [
-		<techreborn:smalldust:66>
+		<techreborn:smalldust:68>
 	],
 
 	#dustSmallUvarovite
@@ -1571,12 +1569,138 @@ var smalldustUnify as IItemStack[][IOreDictEntry] = {
 
 	#dustSmallZinc
 	<ore:dustSmallZinc> : [
+		<industrialupgrade:smalldust:15>,
 		<techreborn:smalldust:59>
 	],
 
 };
 
 for oreDictEntry, items in smalldustUnify {
+	for i in items {
+		mods.jei.JEI.removeAndHide(i);
+	}
+	oreDictEntry.removeItems(items);
+}
+
+var tinydustUnify as IItemStack[][IOreDictEntry] = {
+
+	#dustTinyBronze
+	<ore:dustTinyBronze> : [
+		<ic2:dust:18>
+	],
+
+	#dustTinyCobalt
+	<ore:dustTinyCobalt> : [
+		<industrialupgrade:verysmalldust:6>
+	],
+
+	#dustTinyCopper
+	<ore:dustTinyCopper>: [
+		<ic2:dust:19>
+	],
+
+	#dustTinyElectrum
+	<ore:dustTinyElectrum> : [
+		<industrialupgrade:verysmalldust:13>
+	],
+
+	#dustTinyGermanium
+	<ore:dustTinyGermanium> : [
+		<industrialupgrade:verysmalldust:18>
+	],
+
+	#dustTinyGold
+	<ore:dustTinyGold> : [
+		<ic2:dust:20>
+	],
+	#dustTinyInvar
+	<ore:dustTinyInvar> : [
+		<industrialupgrade:verysmalldust:4>
+	],
+	
+	#dustTinyIridium
+	<ore:dustTinyIridium> : [
+		<industrialupgrade:verysmalldust:17>
+	],
+
+	#dustTinyIron
+	<ore:dustTinyIron>: [
+		<ic2:dust:21>
+	],
+
+	#dustTinyLapis
+	<ore:dustTinyLapis> : [
+		<ic2:dust:22>
+	],
+
+	#dustTinyLead
+	<ore:dustTinyLead>: [
+		<ic2:dust:23>
+	],
+
+	#dustTinyLitium
+	<ore:dustTinyLitium> : [
+		<ic2:dust:24>
+	],
+
+	#dustTinyMagnesium
+	<ore:dustTinyMagnesium> : [
+		<industrialupgrade:verysmalldust:7>
+	],
+
+	#dustTinyManganese
+	<ore:dustTinyManganese> : [
+		<industrialupgrade:verysmalldust:16>
+	],
+
+	#dustTinyNickel
+	<ore:dustTinyNickel> : [
+		<industrialupgrade:verysmalldust:8>
+	],
+
+	#dustTinyObsidian
+	<ore:dustTinyObsidian> : [
+		<ic2:dust:25>
+	],
+
+	#dustTinyPlatinum
+	<ore:dustTinyPlatinum> : [
+		<industrialupgrade:verysmalldust:9>
+	],
+
+	#dustTinySilver
+	<ore:dustTinySilver>: [
+		<industrialupgrade:verysmalldust:14>
+	],
+
+	#dustTinySulfur
+	<ore:dustTinySulfur>: [
+		<ic2:dust:27>
+	],
+
+	#dustTinyTin
+	<ore:dustTinyTin>: [
+		<ic2:dust:28>
+	],
+
+	#dustTinyTitanium
+	<ore:dustTinyTitanium> : [
+		<industrialupgrade:verysmalldust:10>
+	],
+
+	#dustTinyTungsten
+	<ore:dustTinyTungsten> : [
+		<industrialupgrade:verysmalldust:3>
+	],
+
+	#dustTinyZinc
+	<ore:dustTinyZinc> : [
+		<industrialupgrade:verysmalldust:15>
+	],
+
+};
+
+for oreDictEntry, items in tinydustUnify {
 	for i in items {
 		mods.jei.JEI.removeAndHide(i);
 	}
